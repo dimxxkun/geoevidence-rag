@@ -2,7 +2,7 @@
 
 **Name:** fictional planning briefs, version 1.
 
-**License:** MIT, authored for this project.
+**License:** [Noncommercial Use and Commercial Permission License](../LICENSE), authored for this project. Commercial use requires a separate written agreement and an agreed fee.
 
 **Purpose:** exercise spatial filtering, document provenance, ranker combinations, dated distractors and known missing answers.
 

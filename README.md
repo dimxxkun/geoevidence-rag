@@ -4,7 +4,7 @@
 
 [![checks](https://github.com/dimxxkun/geoevidence-rag/actions/workflows/ci.yml/badge.svg)](https://github.com/dimxxkun/geoevidence-rag/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.11–3.13-3776AB)](pyproject.toml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-14B8A6)](LICENSE)
+[![License: Noncommercial](https://img.shields.io/badge/License-Noncommercial-blue.svg)](LICENSE)
 
 A local geospatial retrieval-augmented generation project for asking questions about geotagged planning briefs. It combines **BM25, MiniLM embeddings, geographic constraints, and FLAN-T5 generation**, with a map workbench, a typed HTTP API, and a reproducible evaluation.
 
@@ -175,10 +175,16 @@ Default CI exercises deterministic code and the map workbench without downloadin
 
 ## Models, licenses and references
 
-Project code and authored demo data are MIT-licensed. MiniLM and FLAN-T5 are Apache-2.0 models distributed separately under their upstream licenses. The project does not claim authorship of their pretrained weights.
+Project code and authored demo data use the [noncommercial license](LICENSE); commercial use requires a separate written agreement and an agreed fee. MiniLM and FLAN-T5 are Apache-2.0 models distributed separately under their upstream licenses. The project does not claim authorship of their pretrained weights.
 
 - [MiniLM model card](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) and [Sentence Transformers similarity documentation](https://www.sbert.net/docs/sentence_transformer/usage/semantic_textual_similarity.html).
 - [FLAN-T5-small model card](https://huggingface.co/google/flan-t5-small).
 - [PyProj geodesic API](https://pyproj4.github.io/pyproj/stable/api/geod.html).
 - [Reciprocal rank fusion paper](https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf).
 - [RFC 7946: GeoJSON](https://www.rfc-editor.org/rfc/rfc7946).
+
+## Commercial permission
+
+Original material in this repository is available under the [Noncommercial Use and Commercial Permission License](LICENSE). **Noncommercial use is free. Commercial use requires prior written permission and a separate written agreement specifying the scope and agreed fee.** Contact [work.abdulfatai@gmail.com](mailto:work.abdulfatai@gmail.com) with the repository name and intended use.
+
+Portfolio review and recruitment evaluation are permitted without a fee. Third-party components retain their own licenses. Permissions already granted for earlier versions remain valid; the new terms do not revoke those grants. These are custom source-available terms, not an OSI-approved open-source license.
