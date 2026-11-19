@@ -1,0 +1,22 @@
+[
+  {"id":"mainland-current", "query":{"question":"What drainage maintenance is recommended?", "filters":{"radius":{"center":{"lon":3.3792,"lat":6.5244},"km":8},"topic":"flood","published_from":"2026-01-01"},"top_k":3}, "relevant":["lag-drain"]},
+  {"id":"island-pumps", "query":{"question":"How should portable pumps be prepared?", "filters":{"bbox":{"west":3.40,"south":6.40,"east":3.48,"north":6.47},"topic":"flood"},"top_k":3}, "relevant":["lag-pump"]},
+  {"id":"abuja-structure", "query":{"question":"What should replace the failed drainage crossing?", "filters":{"radius":{"center":{"lon":7.4893,"lat":9.0579},"km":15},"topic":"flood"},"top_k":3}, "relevant":["abu-drain"]},
+  {"id":"southern-outfall", "query":{"question":"When should crews check the tidal flap gate?", "filters":{"bbox":{"west":6.9,"south":4.7,"east":7.2,"north":4.9}},"top_k":3}, "relevant":["ph-drain"]},
+  {"id":"historical-proposal", "query":{"question":"What was proposed for the mainland canal?", "filters":{"topic":"flood","published_to":"2025-12-31"},"top_k":3}, "relevant":["lag-drain-old"]},
+  {"id":"phase-loads", "query":{"question":"What should engineers try before replacing the transformer?", "filters":{"bbox":{"west":3.2,"south":6.4,"east":3.6,"north":6.7},"topic":"electricity"},"top_k":3}, "relevant":["lag-feeder"]},
+  {"id":"damaged-insulation", "query":{"question":"Which component needs replacement under isolation?", "filters":{"topic":"electricity"},"top_k":3}, "relevant":["abu-feeder"]},
+  {"id":"water-valves", "query":{"question":"What follows replacement of leaking service valves?", "filters":{"radius":{"center":{"lon":3.3792,"lat":6.5244},"km":10}},"top_k":3}, "relevant":["lag-water"]},
+  {"id":"sensor-offset", "query":{"question":"How are reservoir telemetry readings checked?", "filters":{"topic":"water"},"top_k":3}, "relevant":["abu-water"]},
+  {"id":"shade-corridor", "query":{"question":"What is proposed to shade the walking corridor?", "filters":{"radius":{"center":{"lon":3.3792,"lat":6.5244},"km":10},"topic":"heat"},"top_k":3}, "relevant":["lag-heat"]},
+  {"id":"market-fabric", "query":{"question":"Why use temporary shade rather than trees?", "filters":{"radius":{"center":{"lon":8.5167,"lat":12},"km":10}},"top_k":3}, "relevant":["kano-heat"]},
+  {"id":"shoreline-repeat", "query":{"question":"Which conditions must accompany repeat shoreline photographs?", "filters":{"topic":"coast"},"top_k":3}, "relevant":["lag-coast"]},
+  {"id":"wetland-imagery", "query":{"question":"How should uncertain mangrove and water pixels be reviewed?", "filters":{"topic":"coast"},"top_k":3}, "relevant":["ph-wetland"]},
+  {"id":"wrapped-ocean", "query":{"question":"What do the Pacific monitoring buoys observe?", "filters":{"bbox":{"west":179,"south":-1,"east":-179,"north":1}},"top_k":3}, "relevant":["date-east","date-west"]},
+  {"id":"no-location", "query":{"question":"What drainage repairs are recommended?", "filters":{"radius":{"center":{"lon":0,"lat":0},"km":5}},"top_k":3}, "relevant":[]},
+  {"id":"no-date", "query":{"question":"What drainage repairs are recommended?", "filters":{"published_from":"2030-01-01"},"top_k":3}, "relevant":[]},
+  {"id":"no-topic", "query":{"question":"Where are the airports?", "filters":{"topic":"aviation"},"top_k":3}, "relevant":[]},
+  {"id":"constraints-intersect", "query":{"question":"What ocean instruments are available?", "filters":{"topic":"ocean","radius":{"center":{"lon":3.3792,"lat":6.5244},"km":20}},"top_k":3}, "relevant":[]},
+  {"id":"unsupported-astronomy", "query":{"question":"Explain quantum entanglement of photons", "filters":{},"top_k":3}, "relevant":[]},
+  {"id":"unsupported-budget", "query":{"question":"What is the exact approved drainage budget in naira?", "filters":{"radius":{"center":{"lon":3.3792,"lat":6.5244},"km":8},"topic":"flood","published_from":"2026-01-01"},"top_k":3}, "relevant":[]}
+]

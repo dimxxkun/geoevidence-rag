@@ -1,0 +1,79 @@
+{
+  "executed_at": "2026-11-19T08:53:13.269987+00:00",
+  "scope": "Three actual local-model runs. Assertions verify workflow and context, not generated factual accuracy.",
+  "answers": [
+    {
+      "question": "What should crews remove before the wet-season exercise?",
+      "answer": "plastic waste and accumulated sediment",
+      "status": "answered",
+      "generator": "google/flan-t5-small@0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+      "grounding": "unverified_generation",
+      "evidence": [
+        {
+          "citation": "E1",
+          "chunk_id": "lag-drain:0",
+          "document_id": "lag-drain",
+          "title": "Mainland drainage inspection",
+          "source": "fixture://planning-briefs/lag-drain",
+          "published": "2026-06-12",
+          "location": {
+            "lon": 3.3792,
+            "lat": 6.5244
+          },
+          "quote": "The fictional mainland inspection found blocked culverts along the canal approach. Crews should remove plastic waste and accumulated sediment before the wet-season exercise. The maintenance plan prioritizes clearing the inlet grates, photographing each obstruction, and logging downstream water levels after cleaning. No pump purchase was approved. This brief recommends a follow-up inspection within seven days of the exercise. The record describes a training scenario and does not establish actual flood conditions in Lagos.",
+          "start": 0,
+          "end": 526,
+          "score": 0.03278688524590164,
+          "lexical_score": 10.54190398784003,
+          "cosine_similarity": 0.3482115566730499,
+          "distance_km": 0.0
+        }
+      ],
+      "eligible_documents": 1,
+      "index_fingerprint": "65223704599db75ee4ce5d908b21502c763f58d47a657da73c21bdc6681ea003",
+      "elapsed_ms": 254.121
+    },
+    {
+      "question": "What is the exact approved drainage budget in naira?",
+      "answer": "No pump purchase",
+      "status": "answered",
+      "generator": "google/flan-t5-small@0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+      "grounding": "unverified_generation",
+      "evidence": [
+        {
+          "citation": "E1",
+          "chunk_id": "lag-drain:0",
+          "document_id": "lag-drain",
+          "title": "Mainland drainage inspection",
+          "source": "fixture://planning-briefs/lag-drain",
+          "published": "2026-06-12",
+          "location": {
+            "lon": 3.3792,
+            "lat": 6.5244
+          },
+          "quote": "The fictional mainland inspection found blocked culverts along the canal approach. Crews should remove plastic waste and accumulated sediment before the wet-season exercise. The maintenance plan prioritizes clearing the inlet grates, photographing each obstruction, and logging downstream water levels after cleaning. No pump purchase was approved. This brief recommends a follow-up inspection within seven days of the exercise. The record describes a training scenario and does not establish actual flood conditions in Lagos.",
+          "start": 0,
+          "end": 526,
+          "score": 0.03278688524590164,
+          "lexical_score": 2.8087178672896043,
+          "cosine_similarity": 0.4178768992424011,
+          "distance_km": 0.0
+        }
+      ],
+      "eligible_documents": 1,
+      "index_fingerprint": "65223704599db75ee4ce5d908b21502c763f58d47a657da73c21bdc6681ea003",
+      "elapsed_ms": 118.178
+    },
+    {
+      "question": "What drainage maintenance is recommended?",
+      "answer": "No matching evidence was found within the requested filters.",
+      "status": "no_evidence",
+      "generator": "google/flan-t5-small@0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+      "grounding": "not_applicable",
+      "evidence": [],
+      "eligible_documents": 0,
+      "index_fingerprint": "65223704599db75ee4ce5d908b21502c763f58d47a657da73c21bdc6681ea003",
+      "elapsed_ms": 0.071
+    }
+  ]
+}

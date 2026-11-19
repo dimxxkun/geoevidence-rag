@@ -1,0 +1,974 @@
+{
+  "executed_at": "2026-11-19T08:50:34.431456+00:00",
+  "scope": "Authored synthetic retrieval cases; not a held-out real-world benchmark or generation evaluation.",
+  "index": {
+    "schema_version": 1,
+    "corpus_sha256": "f7096c3db1ea64b4a2aec33a926e6c3947a8fc9c4730077cbd897fe4a58c819c",
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41:normalized:384",
+    "chunk_words": 80,
+    "chunk_overlap": 15,
+    "chunker": "word-window-sentence-end-v1",
+    "document_count": 20,
+    "chunk_count": 21,
+    "vector_dimensions": 384,
+    "fingerprint": "65223704599db75ee4ce5d908b21502c763f58d47a657da73c21bdc6681ea003"
+  },
+  "cases_sha256": "775e3e1bea98f891f6927fe44dcc5a16bdcec184ec54a061437e9bc71d8a0c9e",
+  "python": "3.12.16",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.5",
+    "pyproj": "3.8.0",
+    "sentence-transformers": "5.7.0",
+    "transformers": "4.57.6",
+    "torch": "2.15.0+cpu"
+  },
+  "timing": "Sequential CPU retrieval only; excludes index/model loading and answer generation. First query may be cold.",
+  "summary": {
+    "lexical": {
+      "answerable_cases": 14,
+      "negative_cases": 6,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "abstention_accuracy": 0.8333333333333334,
+      "retrieval_p50_ms": 0.077,
+      "retrieval_p95_ms": 0.11640000000000002
+    },
+    "dense": {
+      "answerable_cases": 14,
+      "negative_cases": 6,
+      "recall_at_k": 0.9285714285714286,
+      "mrr": 0.9285714285714286,
+      "ndcg_at_k": 0.9285714285714286,
+      "abstention_accuracy": 0.8333333333333334,
+      "retrieval_p50_ms": 7.1105,
+      "retrieval_p95_ms": 8.601200000000008
+    },
+    "hybrid": {
+      "answerable_cases": 14,
+      "negative_cases": 6,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "abstention_accuracy": 0.8333333333333334,
+      "retrieval_p50_ms": 7.2395,
+      "retrieval_p95_ms": 7.8004500000000005
+    }
+  },
+  "cases": [
+    {
+      "id": "mainland-current",
+      "mode": "lexical",
+      "gold": [
+        "lag-drain"
+      ],
+      "retrieved": [
+        "lag-drain"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 0.106
+    },
+    {
+      "id": "mainland-current",
+      "mode": "dense",
+      "gold": [
+        "lag-drain"
+      ],
+      "retrieved": [
+        "lag-drain"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 18.295
+    },
+    {
+      "id": "mainland-current",
+      "mode": "hybrid",
+      "gold": [
+        "lag-drain"
+      ],
+      "retrieved": [
+        "lag-drain"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 7.243
+    },
+    {
+      "id": "island-pumps",
+      "mode": "lexical",
+      "gold": [
+        "lag-pump"
+      ],
+      "retrieved": [
+        "lag-pump"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 0.078
+    },
+    {
+      "id": "island-pumps",
+      "mode": "dense",
+      "gold": [
+        "lag-pump"
+      ],
+      "retrieved": [
+        "lag-pump"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 7.037
+    },
+    {
+      "id": "island-pumps",
+      "mode": "hybrid",
+      "gold": [
+        "lag-pump"
+      ],
+      "retrieved": [
+        "lag-pump"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 6.139
+    },
+    {
+      "id": "abuja-structure",
+      "mode": "lexical",
+      "gold": [
+        "abu-drain"
+      ],
+      "retrieved": [
+        "abu-drain"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 0.075
+    },
+    {
+      "id": "abuja-structure",
+      "mode": "dense",
+      "gold": [
+        "abu-drain"
+      ],
+      "retrieved": [
+        "abu-drain"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 7.122
+    },
+    {
+      "id": "abuja-structure",
+      "mode": "hybrid",
+      "gold": [
+        "abu-drain"
+      ],
+      "retrieved": [
+        "abu-drain"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 6.935
+    },
+    {
+      "id": "southern-outfall",
+      "mode": "lexical",
+      "gold": [
+        "ph-drain"
+      ],
+      "retrieved": [
+        "ph-drain",
+        "ph-wetland"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 0.089
+    },
+    {
+      "id": "southern-outfall",
+      "mode": "dense",
+      "gold": [
+        "ph-drain"
+      ],
+      "retrieved": [
+        "ph-drain"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 7.747
+    },
+    {
+      "id": "southern-outfall",
+      "mode": "hybrid",
+      "gold": [
+        "ph-drain"
+      ],
+      "retrieved": [
+        "ph-drain",
+        "ph-wetland"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 7.544
+    },
+    {
+      "id": "historical-proposal",
+      "mode": "lexical",
+      "gold": [
+        "lag-drain-old"
+      ],
+      "retrieved": [
+        "lag-drain-old"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 0.061
+    },
+    {
+      "id": "historical-proposal",
+      "mode": "dense",
+      "gold": [
+        "lag-drain-old"
+      ],
+      "retrieved": [
+        "lag-drain-old"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 6.513
+    },
+    {
+      "id": "historical-proposal",
+      "mode": "hybrid",
+      "gold": [
+        "lag-drain-old"
+      ],
+      "retrieved": [
+        "lag-drain-old"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 7.236
+    },
+    {
+      "id": "phase-loads",
+      "mode": "lexical",
+      "gold": [
+        "lag-feeder"
+      ],
+      "retrieved": [
+        "lag-feeder"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 0.064
+    },
+    {
+      "id": "phase-loads",
+      "mode": "dense",
+      "gold": [
+        "lag-feeder"
+      ],
+      "retrieved": [
+        "lag-feeder"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 7.617
+    },
+    {
+      "id": "phase-loads",
+      "mode": "hybrid",
+      "gold": [
+        "lag-feeder"
+      ],
+      "retrieved": [
+        "lag-feeder"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 7.885
+    },
+    {
+      "id": "damaged-insulation",
+      "mode": "lexical",
+      "gold": [
+        "abu-feeder"
+      ],
+      "retrieved": [
+        "abu-feeder",
+        "lag-feeder"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 0.073
+    },
+    {
+      "id": "damaged-insulation",
+      "mode": "dense",
+      "gold": [
+        "abu-feeder"
+      ],
+      "retrieved": [],
+      "recall_at_k": 0.0,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": 0.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 7.252
+    },
+    {
+      "id": "damaged-insulation",
+      "mode": "hybrid",
+      "gold": [
+        "abu-feeder"
+      ],
+      "retrieved": [
+        "abu-feeder",
+        "lag-feeder"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 7.363
+    },
+    {
+      "id": "water-valves",
+      "mode": "lexical",
+      "gold": [
+        "lag-water"
+      ],
+      "retrieved": [
+        "lag-water",
+        "lag-transit",
+        "lag-feeder"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 6,
+      "latency_ms": 0.143
+    },
+    {
+      "id": "water-valves",
+      "mode": "dense",
+      "gold": [
+        "lag-water"
+      ],
+      "retrieved": [
+        "lag-water"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 6,
+      "latency_ms": 7.08
+    },
+    {
+      "id": "water-valves",
+      "mode": "hybrid",
+      "gold": [
+        "lag-water"
+      ],
+      "retrieved": [
+        "lag-water",
+        "lag-transit",
+        "lag-feeder"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 6,
+      "latency_ms": 7.208
+    },
+    {
+      "id": "sensor-offset",
+      "mode": "lexical",
+      "gold": [
+        "abu-water"
+      ],
+      "retrieved": [
+        "abu-water"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 0.062
+    },
+    {
+      "id": "sensor-offset",
+      "mode": "dense",
+      "gold": [
+        "abu-water"
+      ],
+      "retrieved": [
+        "abu-water",
+        "lag-water"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 6.814
+    },
+    {
+      "id": "sensor-offset",
+      "mode": "hybrid",
+      "gold": [
+        "abu-water"
+      ],
+      "retrieved": [
+        "abu-water",
+        "lag-water"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 7.317
+    },
+    {
+      "id": "shade-corridor",
+      "mode": "lexical",
+      "gold": [
+        "lag-heat"
+      ],
+      "retrieved": [
+        "lag-heat"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 0.082
+    },
+    {
+      "id": "shade-corridor",
+      "mode": "dense",
+      "gold": [
+        "lag-heat"
+      ],
+      "retrieved": [
+        "lag-heat"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 7.897
+    },
+    {
+      "id": "shade-corridor",
+      "mode": "hybrid",
+      "gold": [
+        "lag-heat"
+      ],
+      "retrieved": [
+        "lag-heat"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 7.352
+    },
+    {
+      "id": "market-fabric",
+      "mode": "lexical",
+      "gold": [
+        "kano-heat"
+      ],
+      "retrieved": [
+        "kano-heat"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 0.096
+    },
+    {
+      "id": "market-fabric",
+      "mode": "dense",
+      "gold": [
+        "kano-heat"
+      ],
+      "retrieved": [
+        "kano-heat"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 7.649
+    },
+    {
+      "id": "market-fabric",
+      "mode": "hybrid",
+      "gold": [
+        "kano-heat"
+      ],
+      "retrieved": [
+        "kano-heat"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 1,
+      "latency_ms": 7.279
+    },
+    {
+      "id": "shoreline-repeat",
+      "mode": "lexical",
+      "gold": [
+        "lag-coast"
+      ],
+      "retrieved": [
+        "lag-coast",
+        "ph-wetland"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 0.076
+    },
+    {
+      "id": "shoreline-repeat",
+      "mode": "dense",
+      "gold": [
+        "lag-coast"
+      ],
+      "retrieved": [
+        "lag-coast",
+        "ph-wetland"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 7.262
+    },
+    {
+      "id": "shoreline-repeat",
+      "mode": "hybrid",
+      "gold": [
+        "lag-coast"
+      ],
+      "retrieved": [
+        "lag-coast",
+        "ph-wetland"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 7.085
+    },
+    {
+      "id": "wetland-imagery",
+      "mode": "lexical",
+      "gold": [
+        "ph-wetland"
+      ],
+      "retrieved": [
+        "ph-wetland"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 0.084
+    },
+    {
+      "id": "wetland-imagery",
+      "mode": "dense",
+      "gold": [
+        "ph-wetland"
+      ],
+      "retrieved": [
+        "ph-wetland",
+        "lag-coast"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 7.098
+    },
+    {
+      "id": "wetland-imagery",
+      "mode": "hybrid",
+      "gold": [
+        "ph-wetland"
+      ],
+      "retrieved": [
+        "ph-wetland",
+        "lag-coast"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 7.705
+    },
+    {
+      "id": "wrapped-ocean",
+      "mode": "lexical",
+      "gold": [
+        "date-east",
+        "date-west"
+      ],
+      "retrieved": [
+        "date-west",
+        "date-east"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 0.085
+    },
+    {
+      "id": "wrapped-ocean",
+      "mode": "dense",
+      "gold": [
+        "date-east",
+        "date-west"
+      ],
+      "retrieved": [
+        "date-west",
+        "date-east"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 7.749
+    },
+    {
+      "id": "wrapped-ocean",
+      "mode": "hybrid",
+      "gold": [
+        "date-east",
+        "date-west"
+      ],
+      "retrieved": [
+        "date-west",
+        "date-east"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_k": 1.0,
+      "correct_abstention": null,
+      "eligible_documents": 2,
+      "latency_ms": 7.796
+    },
+    {
+      "id": "no-location",
+      "mode": "lexical",
+      "gold": [],
+      "retrieved": [],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": true,
+      "eligible_documents": 0,
+      "latency_ms": 0.057
+    },
+    {
+      "id": "no-location",
+      "mode": "dense",
+      "gold": [],
+      "retrieved": [],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": true,
+      "eligible_documents": 0,
+      "latency_ms": 0.033
+    },
+    {
+      "id": "no-location",
+      "mode": "hybrid",
+      "gold": [],
+      "retrieved": [],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": true,
+      "eligible_documents": 0,
+      "latency_ms": 0.031
+    },
+    {
+      "id": "no-date",
+      "mode": "lexical",
+      "gold": [],
+      "retrieved": [],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": true,
+      "eligible_documents": 0,
+      "latency_ms": 0.008
+    },
+    {
+      "id": "no-date",
+      "mode": "dense",
+      "gold": [],
+      "retrieved": [],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": true,
+      "eligible_documents": 0,
+      "latency_ms": 0.007
+    },
+    {
+      "id": "no-date",
+      "mode": "hybrid",
+      "gold": [],
+      "retrieved": [],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": true,
+      "eligible_documents": 0,
+      "latency_ms": 0.007
+    },
+    {
+      "id": "no-topic",
+      "mode": "lexical",
+      "gold": [],
+      "retrieved": [],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": true,
+      "eligible_documents": 0,
+      "latency_ms": 0.009
+    },
+    {
+      "id": "no-topic",
+      "mode": "dense",
+      "gold": [],
+      "retrieved": [],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": true,
+      "eligible_documents": 0,
+      "latency_ms": 0.008
+    },
+    {
+      "id": "no-topic",
+      "mode": "hybrid",
+      "gold": [],
+      "retrieved": [],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": true,
+      "eligible_documents": 0,
+      "latency_ms": 0.008
+    },
+    {
+      "id": "constraints-intersect",
+      "mode": "lexical",
+      "gold": [],
+      "retrieved": [],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": true,
+      "eligible_documents": 0,
+      "latency_ms": 0.012
+    },
+    {
+      "id": "constraints-intersect",
+      "mode": "dense",
+      "gold": [],
+      "retrieved": [],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": true,
+      "eligible_documents": 0,
+      "latency_ms": 0.011
+    },
+    {
+      "id": "constraints-intersect",
+      "mode": "hybrid",
+      "gold": [],
+      "retrieved": [],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": true,
+      "eligible_documents": 0,
+      "latency_ms": 0.011
+    },
+    {
+      "id": "unsupported-astronomy",
+      "mode": "lexical",
+      "gold": [],
+      "retrieved": [],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": true,
+      "eligible_documents": 20,
+      "latency_ms": 0.115
+    },
+    {
+      "id": "unsupported-astronomy",
+      "mode": "dense",
+      "gold": [],
+      "retrieved": [],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": true,
+      "eligible_documents": 20,
+      "latency_ms": 7.099
+    },
+    {
+      "id": "unsupported-astronomy",
+      "mode": "hybrid",
+      "gold": [],
+      "retrieved": [],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": true,
+      "eligible_documents": 20,
+      "latency_ms": 7.544
+    },
+    {
+      "id": "unsupported-budget",
+      "mode": "lexical",
+      "gold": [],
+      "retrieved": [
+        "lag-drain"
+      ],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": false,
+      "eligible_documents": 1,
+      "latency_ms": 0.094
+    },
+    {
+      "id": "unsupported-budget",
+      "mode": "dense",
+      "gold": [],
+      "retrieved": [
+        "lag-drain"
+      ],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": false,
+      "eligible_documents": 1,
+      "latency_ms": 8.091
+    },
+    {
+      "id": "unsupported-budget",
+      "mode": "hybrid",
+      "gold": [],
+      "retrieved": [
+        "lag-drain"
+      ],
+      "recall_at_k": null,
+      "reciprocal_rank": 0,
+      "ndcg_at_k": null,
+      "correct_abstention": false,
+      "eligible_documents": 1,
+      "latency_ms": 6.428
+    }
+  ]
+}
